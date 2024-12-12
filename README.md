@@ -21,5 +21,5 @@ This project contains automated tests to validate the functionality of a website
     ```
     OR
     ```bash
-    npm run open
+    npm run openfsdfdsfgsf
     ```
