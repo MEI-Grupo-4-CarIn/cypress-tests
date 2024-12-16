@@ -4,7 +4,7 @@ describe("Login - API", () => {
   it("Test Case 1: Login with valid credentials", () => {
     // Load the login credentials from the fixture file
     cy.fixture("login_credentials.json").then((credentials) => {
-      const admin = credentials.valid.find((user) => user.name === "admin");
+      const admin = credentials.base.find((user) => user.name === "admin");
 
       cy.request({
         method: "POST",
