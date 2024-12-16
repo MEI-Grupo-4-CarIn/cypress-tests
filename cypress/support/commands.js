@@ -61,3 +61,9 @@ Cypress.Commands.add("loginViaApi", (email, password) => {
     localStorage.setItem("token", response.body.token);
   });
 });
+
+Cypress.Commands.add("login", (email, password) => {
+  cy.get("#email").type(email);
+  cy.get("#password").type(password);
+  cy.contains("button", "Login").click();
+});
